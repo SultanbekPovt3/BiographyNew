@@ -1,0 +1,83 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.bio-header {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-link {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #333;
+    margin-right: 10px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-link:hover {
+    background-color: #555;
+}
+
+.tab-link.current {
+    background-color: #fff;
+    color: #333; /* Цвет текста активной вкладки */
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: #333; /* Черный фон для основного текста */
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-item {
+    display: none;
+    background-color: #fff; /* Белый фон для содержимого вкладок */
+    padding: 20px;
+    border-radius: 5px;
+    color: #333; /* Цвет текста в содержимом вкладок */
+}
+
+.tab-item.current {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
